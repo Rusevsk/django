@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Productos</title>
+</head>
+<body>
+    <h1>Lista de Productos</h1>
+    <ul>
+        {% for producto in productos %}
+            <li>
+                <strong>Nombre:</strong> {{ producto.nombre }}<br>
+                <strong>Sabor:</strong> {{ producto.sabor }}<br>
+                <strong>Precio:</strong> ${{ producto.precio }}<br>
+                <strong>Cantidad:</strong> {{ producto.cantidad }} unidades
+            </li>
+        {% empty %}
+            <li>No hay productos disponibles.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

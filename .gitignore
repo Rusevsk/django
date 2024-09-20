@@ -1,0 +1,22 @@
+# .gitignore
+
+# Entornos virtuales
+env/
+.venv/
+__pycache__/
+
+# Archivos de configuración de Python
+*.pyc
+*.pyo
+*.pyd
+
+# Base de datos local
+*.sqlite3
+
+# Archivos de configuración de Django
+*.log
+db.sqlite3
+media/
+
+# Archivos de entorno (si usas)
+.env
